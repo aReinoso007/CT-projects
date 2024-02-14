@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# custom folder
+/week-11-exer-1
+/week-11-typescript-object

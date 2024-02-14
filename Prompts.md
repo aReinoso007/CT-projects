@@ -9,13 +9,12 @@ bases on these topics [
    TypeScript interfaces
         Using interfaces to define the shape of data
         Using interfaces to enforce type safety
-        TypeScript objects
-        Defining objects with TypeScript
-        Using TypeScript types to specify the properties of an object
-        Using object methods to access and manipulate object properties
-    TypeScript classes
-        Using TypeScript classes to create reusable components
-        Using TypeScript classes to encapsulate state
-    TypeScript generics
-        Using generics to write more flexible and reusable code 
+        Typed props in components
+    Advanced props
+        union literal strings
+        children typed props
+        event props (click, eventHandler)
 ] all these applied to react with typescript
+
+## Conclusion
+When you finish creating all the content. Write a short conclusion in a friendly tone about the topics we have discussed in this lesson. Do not use subsections or bullets.

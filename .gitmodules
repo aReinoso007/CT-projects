@@ -1,3 +1,8 @@
 [submodule "week-11-exer-1"]
 	path = week-11-exer-1
 	url = https://github.com/aReinoso007/week-11-exer-1.git
+
+[submodule "week-11-typescript-object"]
+	path = week-11-typescript-object
+	url = https://github.com/aReinoso007/week-11-typescript-object.git
+

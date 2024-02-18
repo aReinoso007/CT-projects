@@ -21,6 +21,8 @@ Day3: Typed Hooks and reducers -> working on it
         useContext hook
         useContext future value
         useRef
+    CallBacks
+        useCallBack
 
 Day 4: Typed Components and props
     Class components
@@ -33,4 +35,18 @@ Day 4: Typed Components and props
     Polymorpism
         Polymorphic components
 
-Day 5: de momento tal como estamos
+Day 5: Fundamentals of Authentication & Authorization
+    Overview of Authentication and Authorization in Web Apps
+
+    Firebase
+
+    Configuring environment for firebase
+        configuring authentication context
+        making use of context
+        User registration forms
+        Calling firebase services
+   
+    Protecting our app
+        private routes (protected routes)
+        public routes
+        

@@ -8,7 +8,7 @@ Day 2: Done
         Children props
         Event props
 
-Day3: Typed Hooks and reducers -> working on it
+Day3: Typed Hooks, Reducers, Context and CallBacks -> Done
     State management hooks
         useState hook
         useState future value hook

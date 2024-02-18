@@ -25,7 +25,7 @@ Day3: Typed Hooks, Reducers, Context and CallBacks -> Done
         Passing callbacks as props
         using CallBacks as event handlers
 
-Day 4: Typed Components and props
+Day 4: Class Components and props
     Class components
         Generic props
         Restricting props

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 const SessionStorageForm: React.FC = () => {
-  const [keyInput, setKeyInput] = useState<string>('');
-  const [valueInput, setValueInput] = useState<string>('');
+  const [keyInput, setKeyInput] = useState<string>("");
+  const [valueInput, setValueInput] = useState<string>("");
 
   const saveToSessionStorage = () => {
     // Check if key and value are not empty
@@ -11,13 +12,13 @@ const SessionStorageForm: React.FC = () => {
       sessionStorage.setItem(keyInput, valueInput);
 
       // Clear input fields
-      setKeyInput('');
-      setValueInput('');
+      setKeyInput("");
+      setValueInput("");
 
       // Log success message
       console.log(`Stored: ${keyInput} - ${valueInput}`);
     } else {
-      alert('Please enter both key and value.');
+      alert("Please enter both key and value.");
     }
   };
 
@@ -26,46 +27,58 @@ const SessionStorageForm: React.FC = () => {
     sessionStorage.clear();
 
     // Log success message
-    console.log('Session Storage cleared.');
+    console.log("Session Storage cleared.");
 
     // Optionally, you can provide feedback to the user
-    alert('Session Storage cleared.');
+    alert("Session Storage cleared.");
   };
 
   return (
-    <div>
-      <h1>Session Storage Form</h1>
+    <Container>
+      <Form>
+        <Form.Group>
+          <Form.Label>Key</Form.Label>
+          <Form.Control
+            type="text"
+            id="keyInput"
+            value={keyInput}
+            onChange={(e) => setKeyInput(e.target.value)}
+            required
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Value</Form.Label>
+          <Form.Control
+            type="text"
+            id="valueInput"
+            value={valueInput}
+            onChange={(e) => setValueInput(e.target.value)}
+            required
+          />
+        </Form.Group>
 
-      {/* Form to input key and value */}
-      <form>
-        <label htmlFor="keyInput">Key:</label>
-        <input
-          type="text"
-          id="keyInput"
-          value={keyInput}
-          onChange={(e) => setKeyInput(e.target.value)}
-          required
-        />
-
-        <label htmlFor="valueInput">Value:</label>
-        <input
-          type="text"
-          id="valueInput"
-          value={valueInput}
-          onChange={(e) => setValueInput(e.target.value)}
-          required
-        />
-
-        <button type="button" onClick={saveToSessionStorage}>
-          Save to Session Storage
-        </button>
-      </form>
-
-      {/* Button to delete stored data */}
-      <button type="button" onClick={clearSessionStorage}>
-        Clear Session Storage
-      </button>
-    </div>
+        <Row>
+          <Col>
+            <Button
+              className="m-3"
+              type="submit"
+              onClick={saveToSessionStorage}
+            >
+              Save to Session Storage
+            </Button>
+          </Col>
+          <Col>
+            <Button
+              className="m-3 float-right"
+              type="button"
+              onClick={clearSessionStorage}
+            >
+              Clear Session Storage
+            </Button>
+          </Col>
+        </Row>
+      </Form>
+    </Container>
   );
 };
 

@@ -32,3 +32,93 @@ Start writing in a tutorial/blog approach with a friendly tone about the followi
 
 ## Conclusion
 When you finish creating all the content. Write a short conclusion in a friendly tone about the topics we have discussed in this lesson. Do not use subsections or bullets.
+
+
+
+## generating exercises
+Based on these topics and subtopics [ 
+    1. State management hooks
+        1.1 useState hook
+        1.2 useState future value hook
+        1.3 useState type assertion
+
+    2. Reducers
+        2.1 Reducer functions
+        2.2 useReducer hook
+    3. Context
+        3.1 Create Context
+        3.2 Provide Context
+        3.3 Consume Context
+    4. CallBacks
+        4.1 Passing callbacks as props
+        4.2 using CallBacks as event handlers
+] give me 2 coding exercises with the following structure:
+[
+    Objective
+    Problem statement
+    Instructions
+    Hints
+    Complete code solution
+]
+
+
+
+## Quiz
+Write a 10 question quiz using multiple-choice, matching types of questions, and others.
+Also, present the answer to each question and the type of question. Use a format like
+
+[##Multiple Choice
+
+1. What is the first step in requirements engineering?
+a) Designing the user interface
+b) Writing code
+c) Gathering and defining the needs and constraints of a software system
+d) Testing the software system
+
+    **Correct Answer:**
+    c) Gathering and defining the needs and constraints of a software system
+
+##Matching Question
+
+1. Match the following functional requirements with their corresponding descriptions:
+
+    A. User registration
+    B. Product catalog
+    C. Shopping cart
+    D. Secure payment processing
+
+    1. The website should allow users to create accounts and log in.
+    2. The website should display a catalog of available products, including details such as descriptions, prices, and images.
+    3. Users should be able to add products to a virtual shopping cart, view their cart, and proceed to checkout.
+    4. The website should provide a secure and reliable payment processing system to facilitate online transactions.
+
+    **Correct Answers:**
+    A - 1
+    B - 2
+    C - 3
+    D - 4
+    ]
+Based on these topics and subtopics [ 
+    1. State management hooks
+        1.1 useState hook
+        1.2 useState future value hook
+        1.3 useState type assertion
+
+    2. Reducers
+        2.1 Reducer functions
+        2.2 useReducer hook
+    3. Context
+        3.1 Create Context
+        3.2 Provide Context
+        3.3 Consume Context
+    4. CallBacks
+        4.1 Passing callbacks as props
+        4.2 using CallBacks as event handlers
+] give me 2 coding exercises with the following structure:
+[
+    Objective
+    Problem statement
+    Instructions
+    Hints
+    Complete code solution
+]

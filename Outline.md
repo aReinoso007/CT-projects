@@ -18,9 +18,9 @@ Day3: Typed Hooks and reducers -> working on it
         Reducer functions
         useReducer hook
     Context
-        useContext hook
-        useContext future value
-        useRef
+        Create Context
+        Provide Context
+        Consume Context
     CallBacks
         Passing callbacks as props
         using CallBacks as event handlers

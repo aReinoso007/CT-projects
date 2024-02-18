@@ -12,6 +12,8 @@ import ThemeContext from "./context-vid/ThemeContext";
 import ThemeProvider from "./context-vid/ThemeProvider";
 import { Container, Row } from "react-bootstrap";
 import CounterCallbackComponent from "./Callbacks-div/CounterCallbackComponent";
+import ShoppingCart from "./Exercise2/ShoppingCart";
+import Exercise1 from "./Exercise1/Exercise1";
 
 function App() {
   const [userId, setUserId] = useState<number>(1);
@@ -75,7 +77,18 @@ function App() {
         <p>Count: {count}</p>
         <CounterCallbackComponent onIncrement={handleIncrement} onDecrement={handleDecrement} />
       </Container>
+      <br />
+      <Container>
+        <h1>Exercise 1</h1>
+        <Exercise1 />
+      </Container>
 
+      <Container>
+        <h1>Exercise 2</h1>
+        <h1>Shopping Cart</h1>
+        <ShoppingCart />
+      </Container>
+      <br />
     </Container>
   );
 }

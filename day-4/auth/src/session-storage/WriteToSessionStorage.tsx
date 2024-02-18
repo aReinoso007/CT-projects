@@ -1,3 +1,4 @@
+import { ButtonGroup } from "react-bootstrap";
 
 
 type WriteToSessionStorageProps = {
@@ -17,11 +18,11 @@ const WriteToSessionStorage: React.FC<WriteToSessionStorageProps> = ({})=>{
         sessionStorage.removeItem(key)
     }
     return (
-        <div>
+        <ButtonGroup>
             <button onClick={()=>handleWriteToSessionStorage('BOOTCAMP_INFO','This bootcampt is awesome')}>Write to session storage</button>
             <button onClick={()=>handleReadFromSessionStorage('BOOTCAMP_INFO')}>Read from session storage</button>
             <button onClick={()=>handleRemoveFromSessionStorage('BOOTCAMP_INFO')}>Remove from session storage</button>
-        </div>
+        </ButtonGroup>
     );
 }
 export default WriteToSessionStorage;

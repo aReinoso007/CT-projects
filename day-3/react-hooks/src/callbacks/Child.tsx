@@ -1,3 +1,4 @@
+// ChildComponent.tsx
 import React from 'react';
 
 interface ChildProps {

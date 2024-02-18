@@ -1,28 +1,50 @@
-import { ButtonGroup } from "react-bootstrap";
-
+import { Button, Col } from "react-bootstrap";
 
 type WriteToSessionStorageProps = {
-    key: string;
-    value: string
+  storageKey: string;
+  value: string;
 };
 
-const WriteToSessionStorage: React.FC<WriteToSessionStorageProps> = ({})=>{
-    
-    const handleWriteToSessionStorage = (key: string, value: string) => {
-        sessionStorage.setItem(key, value)
-    }
-    const handleReadFromSessionStorage = (key: string) => {
-        console.log(sessionStorage.getItem(key))
-    }
-    const handleRemoveFromSessionStorage = (key: string) => {
-        sessionStorage.removeItem(key)
-    }
-    return (
-        <ButtonGroup>
-            <button onClick={()=>handleWriteToSessionStorage('BOOTCAMP_INFO','This bootcampt is awesome')}>Write to session storage</button>
-            <button onClick={()=>handleReadFromSessionStorage('BOOTCAMP_INFO')}>Read from session storage</button>
-            <button onClick={()=>handleRemoveFromSessionStorage('BOOTCAMP_INFO')}>Remove from session storage</button>
-        </ButtonGroup>
-    );
-}
+const WriteToSessionStorage: React.FC<WriteToSessionStorageProps> = (
+  props
+) => {
+    console.log(props.storageKey, props.value);
+  const handleWriteToSessionStorage = () => {
+    sessionStorage.setItem(props.storageKey, props.value);
+  };
+
+  const handleReadFromSessionStorage = () => {
+    console.log('key: ' , props.storageKey,', value: ',sessionStorage.getItem(props.storageKey));
+  };
+
+  const handleRemoveFromSessionStorage = () => {
+    sessionStorage.removeItem(props.storageKey);
+  };
+
+  return (
+    <div>
+      <h1>Write to Session Storage</h1>
+      <p>storageKey: {props.storageKey}</p>
+      <p>Value: {props.value}</p>
+      <br />
+      <Col>
+        <Button
+          variant="primary"
+          className="m-2"
+          type="submit"
+          onClick={handleWriteToSessionStorage}
+        >
+          Write to session storage
+        </Button>
+        <Button className="m-2" onClick={handleReadFromSessionStorage}>
+          Read from session storage
+        </Button>
+        <Button className="m-2" onClick={handleRemoveFromSessionStorage}>
+          Remove from session storage
+        </Button>
+      </Col>
+    </div>
+  );
+};
+
 export default WriteToSessionStorage;

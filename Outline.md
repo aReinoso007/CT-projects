@@ -15,14 +15,15 @@ Day3: Typed Hooks and reducers -> working on it
         useState type assertion
 
     Reducers
+        Reducer functions
         useReducer hook
-        useReducer Strict Action type
     Context
         useContext hook
         useContext future value
         useRef
     CallBacks
-        useCallBack
+        Passing callbacks as props
+        using CallBacks as event handlers
 
 Day 4: Typed Components and props
     Class components
@@ -49,4 +50,3 @@ Day 5: Fundamentals of Authentication & Authorization
     Protecting our app
         private routes (protected routes)
         public routes
-        

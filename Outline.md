@@ -36,17 +36,19 @@ Day 4: Class Components and props
     Polymorpism
         Polymorphic components
 
-Day 5: Fundamentals of Authentication & Authorization
-    Overview of Authentication and Authorization in Web Apps
+Day 5: Authentication, Auth0 for user authentication, Mock REST API JSON Server
+    Authentication fundamentals
+        what is it for?
+        JWT
+        Session storage for JWT
+    Auth0 for user authentication
+        setting up
+        login
+        sign up
+        route protection
+    Mock Rest API
+        JSON server
+        Environment
+        Services
 
-    Firebase
-
-    Configuring environment for firebase
-        configuring authentication context
-        making use of context
-        User registration forms
-        Calling firebase services
-   
-    Protecting our app
-        private routes (protected routes)
-        public routes
+           

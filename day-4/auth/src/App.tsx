@@ -1,23 +1,18 @@
 import React from 'react';
 import './App.css';
-import WriteToSessionStorage from './session-storage/WriteToSessionStorage';
-import { Container } from 'react-bootstrap';
-import SessionStorageForm from './exercise-1/SessionStorageForm';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home-page';
+import CallbackPage from './pages/Callback-page';
+import ProfilePage from './pages/Profile-page';
 
 const App: React.FC = ()=> {
 
-  const props = {
-    storageKey: 'BOOTCAMP_INFO',
-    value: 'This bootcamp is awesome'
-  }
-
   return (
-    <Container>
-      <h1>Hello Auth World</h1>
-      <WriteToSessionStorage {...props}/>
-      <h1>Session Storage Form</h1>
-      <SessionStorageForm />
-    </Container>
+    <Routes>
+      <Route path='/' element={<HomePage />} /> 
+      <Route path='/profile' element={<ProfilePage />} /> 
+      <Route path='/callbackk' element={<CallbackPage />} /> 
+    </Routes>
   );
 }
 

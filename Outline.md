@@ -43,8 +43,11 @@ Day 5: Authentication, Auth0 for user authentication, Mock REST API JSON Server
         Session storage for JWT
     Auth0 for user authentication
         setting up
+        Configuring Auth0
+        Integrating Auth0 Hooks and Components
         login
-        sign up
+        Logout
+        Access User information
         route protection
     Mock Rest API
         JSON server

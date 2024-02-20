@@ -1,4 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import PageLayout from "../components/Page-layout";
 
 const CallbackPage: React.FC = () => {
 
@@ -9,9 +10,9 @@ const CallbackPage: React.FC = () => {
     }
 
   return (
-    <div>
-      <h1>Callback Page</h1>
-    </div>
+    <PageLayout>
+
+    </PageLayout>
   );
 };
 export default CallbackPage;

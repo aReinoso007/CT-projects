@@ -2,11 +2,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 
 const ProfilePage: React.FC = () =>{
-    const { user, isAuthenticated, isLoading } = useAuth0();
 
-    if(isLoading){
-        return <div>Loading...</div>
-    }
+    const { user, isAuthenticated } = useAuth0();
 
     if(!isAuthenticated){
         return <div>Not authenticated</div>
@@ -19,8 +16,7 @@ const ProfilePage: React.FC = () =>{
     return(
         <div>
             <h1>Profile Page</h1>
-            <p>Name: {user.name}</p>
-            <p>Email: {user.email}</p>
+            {JSON.stringify(user)}
         </div>
     )
 }

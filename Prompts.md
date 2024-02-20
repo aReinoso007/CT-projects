@@ -5,19 +5,15 @@ Here are some learning objectives examples [
 - The students should be able to understand the basic components of computer hardware and their functions.
 - The students should be able to explain the role of an operating system and its importance in computer usage.
 - The students should be able to demonstrate proper digital etiquette and responsible online behavior.]
-bases on these topics [
+based on these topics [
    Authentication fundamentals
         what is it for?
         JWT
     Auth0 for user authentication
-        setting up
-        login
-        sign up
-        route protection
-    Mock Rest API
-        JSON server
-        Environment
-        Services
+        setting up auth0
+        Auth0 provider
+        log in and log out buttons
+        Navigation and authentication
 ] all these applied to react with typescript
 
 
@@ -67,7 +63,7 @@ Based on these topics and subtopics [
 Write a 10 question quiz using multiple-choice, matching types of questions, and others.
 Also, present the answer to each question and the type of question. Use a format like
 
-[##Multiple Choice
+[##Multiple Choice (7 multiple choice questions here)
 
 1. What is the first step in requirements engineering?
 a) Designing the user interface
@@ -98,23 +94,18 @@ d) Testing the software system
     C - 3
     D - 4
     ]
-Based on these topics and subtopics [ 
-    1. State management hooks
-        1.1 useState hook
-        1.2 useState future value hook
-        1.3 useState type assertion
+based on these topics [
+   Authentication fundamentals
+        what is it for?
+        JWT
+    Auth0 for user authentication
+        setting up auth0
+        Auth0 provider
+        log in and log out buttons
+        Navigation and authentication
+] 
 
-    2. Reducers
-        2.1 Reducer functions
-        2.2 useReducer hook
-    3. Context
-        3.1 Create Context
-        3.2 Provide Context
-        3.3 Consume Context
-    4. CallBacks
-        4.1 Passing callbacks as props
-        4.2 using CallBacks as event handlers
-] give me 2 coding exercises with the following structure:
+all these applied to react with typescript give me 2 coding exercises with the following structure:
 [
     Objective
     Problem statement
@@ -122,3 +113,11 @@ Based on these topics and subtopics [
     Hints
     Complete code solution
 ]
+
+
+
+
+1. **True or False: In Auth0, the Auth0 provider is not necessary for user authentication in a React application.**
+    
+    **Correct Answer:**
+    False

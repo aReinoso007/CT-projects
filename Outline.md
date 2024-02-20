@@ -44,7 +44,7 @@ Day 5: Authentication, Auth0 for user authentication, Mock REST API JSON Server
     Auth0 for user authentication
         setting up
         Configuring Auth0
-        Integrating Auth0 Hooks and Components
+        Auth0 provider
         login
         Logout
         Access User information

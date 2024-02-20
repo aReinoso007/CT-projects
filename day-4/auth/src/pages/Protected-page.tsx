@@ -1,9 +1,10 @@
+import PageLayout from "../components/Page-layout";
 
 const ProtectedPage: React.FC = () =>{
     return(
-        <div>
+        <PageLayout>
             <h1>Protected Page</h1>
-        </div>
+        </PageLayout>
     )
 }
 export default ProtectedPage;

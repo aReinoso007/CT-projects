@@ -1,16 +1,24 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
+import NavBar from "./navigation/Navbar";
+import NavBarButtons from "./NavBarButtons";
 
 type PageLayoutProps = {
-    children?: React.ReactNode;
-}
+  children?: React.ReactNode;
+};
 
 const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
-    return (
-        <Container>
-        <h1>My App</h1>
-        {children}
-        </Container>
-    );
-}
+  return (
+    <Container>
+      <Col>
+      <NavBar />
+      </Col>
+      <h1>My App</h1>
+      {children}
+      <footer>
+        <NavBarButtons />
+      </footer>
+    </Container>
+  );
+};
 
 export default PageLayout;

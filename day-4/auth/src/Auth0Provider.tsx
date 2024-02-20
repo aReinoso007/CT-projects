@@ -14,7 +14,7 @@ const Auth0ProviderWithNavigate: React.FC<Auth0ProviderWithNavigateProps> = ({
   const redirectUri = process.env.REACT_APP_AUTH0_REDIRECT_URI || "http://localhost:3000/callback";
 
   const onRedirectCallback = (appState: any) => {
-    navigate(appState?.returnTo || window.location.pathname);
+    navigate((appState && appState.returnTo) || window.location.pathname);
   };
   
   if (!(domain && clientId && redirectUri)) {
@@ -27,8 +27,10 @@ const Auth0ProviderWithNavigate: React.FC<Auth0ProviderWithNavigateProps> = ({
       clientId={clientId}
       authorizationParams={{
         redirect_uri: redirectUri,
+        scope: "openid profile email",
       }}
       onRedirectCallback={onRedirectCallback}
+      cacheLocation="localstorage"
     >
       {children}
     </Auth0Provider>

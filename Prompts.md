@@ -121,3 +121,18 @@ all these applied to react with typescript give me 2 coding exercises with the f
     
     **Correct Answer:**
     False
+
+
+
+
+Type Safety: 
+    No implementation of type safety.
+
+Ensure Component’s Prop Type Safety: 
+     Components lack prop type safety.
+
+Ensure Correct Interface Creation for Tasks: 
+    Absence of interfaces or incorrect interface creation.
+    
+Utilize Typed Hooks, Reducers, Context, and Callback Functions: 
+    Lack of typed implementation for hooks, reducers, context, and callback functions.

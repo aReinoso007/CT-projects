@@ -6,7 +6,7 @@ First let's start installing apollo client and graphQL
 
 ## Init `ApolloClient`
 Let's go to main.tsx and create a new apolloClient to consume graphqled data
-and use an in memory cache. To use GraphQL we need to wrap our App in an ApolloProvider and define a client
+and use an in memory cache. To use GraphQL we need to wrap our App in an ApolloProvider and define a client.
 
 ```typescript
 import ReactDOM from 'react-dom/client';
@@ -16,8 +16,8 @@ import App from './App';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: "",
-  cache: new InMemoryCache()
+  uri: "https://graphql.anilist.co",
+  cache: new InMemoryCache(),
 });
 
 const root = ReactDOM.createRoot(

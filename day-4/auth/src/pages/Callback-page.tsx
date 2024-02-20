@@ -11,7 +11,7 @@ const CallbackPage: React.FC = () => {
 
   return (
     <PageLayout>
-
+      <h1>Call back Page</h1>
     </PageLayout>
   );
 };

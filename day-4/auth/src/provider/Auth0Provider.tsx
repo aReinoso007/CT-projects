@@ -26,8 +26,7 @@ const Auth0ProviderWithNavigate: React.FC<Auth0ProviderWithNavigateProps> = ({
       domain={domain}
       clientId={clientId}
       authorizationParams={{
-        redirect_uri: redirectUri,
-        scope: "openid profile email",
+        redirect_uri: redirectUri
       }}
       onRedirectCallback={onRedirectCallback}
       cacheLocation="localstorage"

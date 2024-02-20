@@ -12,6 +12,7 @@ const NavBar: React.FC = () => {
             <>
                 <Nav.Link href="/profile">Profile</Nav.Link>
                 <Nav.Link href="/protected">Protected</Nav.Link>
+                <Nav.Link href="/content">Content</Nav.Link>
             </>
         }
       </Nav>

@@ -7,6 +7,8 @@ import ProtectedPage from "./pages/Protected-page";
 import NotFoundPage from "./pages/Notfound-page";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import ProfilePage from "./pages/Profile-page";
+import AuthenticationGuard from "./components/Authentication-guard";
+import ContentPage from "./pages/Content-page";
 
 const ProtectedRoute: React.FC<any> = ({ component, ...args }) => {
   const Component = withAuthenticationRequired(component, args);
@@ -24,11 +26,15 @@ const App: React.FC = () => {
       <Route path="/" element={<HomePage />} />
       <Route
         path="/profile"
-        element={<ProtectedRoute component={ProfilePage} />}
+        element={<AuthenticationGuard component={ProfilePage} />}
       />
       <Route 
         path="/protected"
-        element={<ProtectedRoute component={ProtectedPage} />}
+        element={<AuthenticationGuard component={ProtectedPage} />}
+      />
+      <Route 
+        path="/content"
+        element={<AuthenticationGuard component={ContentPage} />}
       />
       <Route path="/callbackk" element={<CallbackPage />} />
       <Route path="*" element={<NotFoundPage />} />

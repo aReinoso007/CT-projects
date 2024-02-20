@@ -1,8 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import PageLayout from "../components/Page-layout";
 import { Col } from "react-bootstrap";
-import NavBarButtons from "../components/NavBarButtons";
-import LogoutButton from "../components/LogoutButton";
 
 
 const ProfilePage: React.FC = () =>{

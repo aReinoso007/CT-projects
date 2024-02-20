@@ -1,5 +1,4 @@
 import { Nav, Navbar } from "react-bootstrap";
-import SignupButton from "../SignupButton";
 import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -9,10 +8,9 @@ const NavBarButtons: React.FC = () => {
   console.log('isAuthenticated', isAuthenticated)
   return (
     <Navbar>
-        <Nav>
+        <Nav className="m-3">
         {!isAuthenticated && (
         <>
-          <SignupButton />
           <LoginButton />
         </>
       )}

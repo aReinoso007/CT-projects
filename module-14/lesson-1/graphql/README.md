@@ -31,3 +31,7 @@ root.render(
 ```
 ## URQL 
 To define graphql queries
+
+
+## Mutations
+Mutations is for changing our data

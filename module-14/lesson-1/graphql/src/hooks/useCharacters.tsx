@@ -6,3 +6,10 @@ export const useCharacters = () => {
     const { data, loading, error } = useQuery(GET_CHARACTERS);
     return { data, loading, error };
 }
+
+export const useCharacter = (id: string) => {
+    const { data, loading, error } = useQuery(GET_CHARACTERS, {
+        variables: { id }
+    });
+    return { data, loading, error };
+}

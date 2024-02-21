@@ -1,5 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { useCharacters } from "../hooks/useCharacters";
+import { Link } from "react-router-dom";
 
 const CharacterList: React.FC = () => {
   const { error, data, loading } = useCharacters();
@@ -14,12 +15,14 @@ const CharacterList: React.FC = () => {
         {data.characters.results.map((character: any) => {
           return (
             <Col>
-              <Card id={character.id} style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={character.image} />
-                <Card.Body>
-                  <Card.Title>{character.name}</Card.Title>
-                </Card.Body>
-              </Card>
+              <Link to={`/${character.id}`}>
+                <Card id={character.id} style={{ width: "18rem" }}>
+                  <Card.Img variant="top" src={character.image} />
+                  <Card.Body>
+                    <Card.Title>{character.name}</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Link>
             </Col>
           );
         })}

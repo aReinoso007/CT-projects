@@ -1,6 +1,6 @@
 
 import { useQuery } from "@apollo/client";
-import { GET_CHARACTERS } from "../queries/Queries";
+import { GET_CHARACTER, GET_CHARACTERS } from "../queries/Queries";
 
 export const useCharacters = () => {
     const { data, loading, error } = useQuery(GET_CHARACTERS);
@@ -8,8 +8,8 @@ export const useCharacters = () => {
 }
 
 export const useCharacter = (id: string) => {
-    const { data, loading, error } = useQuery(GET_CHARACTERS, {
-        variables: { id }
+    const { data, loading, error } = useQuery(GET_CHARACTER, {
+        variables: { id, }
     });
     return { data, loading, error };
 }

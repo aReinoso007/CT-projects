@@ -1,18 +1,18 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Container } from "react-bootstrap";
 import UserInfoPage from "./Pages/Userinfo-page";
-import PhotoAlbumPage from "./Pages/Album-page";
-import PostPage from "./Pages/Posts-page";
+import HomePage from "./Pages/Home-page";
+import CharacterDetailPage from "./Pages/CharacterDetail-page";
+
 
 
 function App() {
 
   return (
-    <Container>
-      <UserInfoPage />
-      <PhotoAlbumPage />
-      
-    </Container>
+    <Routes>
+      <Route  path="/" element={<HomePage />} />
+      <Route  path="/:id" element={<CharacterDetailPage />} />
+    </Routes>
   );
 }
 

@@ -29,3 +29,5 @@ root.render(
   </ApolloProvider>
 );
 ```
+## URQL 
+To define graphql queries

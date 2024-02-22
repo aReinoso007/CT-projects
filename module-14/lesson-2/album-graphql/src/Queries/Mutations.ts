@@ -12,3 +12,26 @@ export const CREATE_ALBUM = gql`
     }
   }
 `;
+
+
+/**
+ * 
+query{
+  albums(options: {
+    paginate:{
+      page: 1
+      limit: 20
+    }
+  }) {
+    data {
+      id
+      title
+      user {
+        id
+        name
+        website
+      }
+    }
+  }
+}
+ */

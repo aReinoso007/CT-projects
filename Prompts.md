@@ -100,10 +100,9 @@ d) Testing the software system
     D - 4
     ]
 based on these topics [
-   Apollo Client
-   URQL
-   Apollo provider
-   Setting up apollo with React
+   Defining queries using URQL
+   useQuery Hook from apollo
+   query params and consumption with apollo
 ] 
 
 all these applied to react with typescript give me 2 coding exercises with the following structure:

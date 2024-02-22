@@ -4,7 +4,7 @@ type ApolloProviderProps = {
     children: React.ReactNode;
 }
 
-const albumAPI = ''
+const albumAPI = 'https://graphqlzero.almansi.me/api'
 
 const client = new ApolloClient({
     uri: albumAPI,

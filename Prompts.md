@@ -6,14 +6,19 @@ Here are some learning objectives examples [
 - The students should be able to explain the role of an operating system and its importance in computer usage.
 - The students should be able to demonstrate proper digital etiquette and responsible online behavior.]
 based on these topics [
-   Authentication fundamentals
-        what is it for?
+    Authentication Fundamentals
+        What is it for?
         JWT
-    Auth0 for user authentication
-        setting up auth0
+        Session Storage
+        Purpose of JWT, sessionStorage and Http headers
+    Auth0 for User Authentication
+        Setting up Auth0
+        Configuring Auth0
         Auth0 provider
-        log in and log out buttons
-        Navigation and authentication
+        Adding navigation
+            Browser router
+            Auth0 guard for navigation
+            Route protection
 ] all these applied to react with typescript
 
 
@@ -60,7 +65,7 @@ Based on these topics and subtopics [
 
 
 ## Quiz
-Write a 10 question quiz using multiple-choice, matching types of questions, and others.
+Write a 20 question quiz using multiple-choice, matching types of questions, and others.
 Also, present the answer to each question and the type of question. Use a format like
 
 [##Multiple Choice (7 multiple choice questions here)
@@ -95,14 +100,10 @@ d) Testing the software system
     D - 4
     ]
 based on these topics [
-   Authentication fundamentals
-        what is it for?
-        JWT
-    Auth0 for user authentication
-        setting up auth0
-        Auth0 provider
-        log in and log out buttons
-        Navigation and authentication
+   Apollo Client
+   URQL
+   Apollo provider
+   Setting up apollo with React
 ] 
 
 all these applied to react with typescript give me 2 coding exercises with the following structure:
@@ -136,3 +137,16 @@ Ensure Correct Interface Creation for Tasks:
     
 Utilize Typed Hooks, Reducers, Context, and Callback Functions: 
     Lack of typed implementation for hooks, reducers, context, and callback functions.
+
+
+
+
+based on these topics and subtopics [
+    Setting up GraphQL in a React environment
+        Apollo Client
+        URQL 
+        Apollo Provider
+        Defining GraphQL queries using URQL
+        useQuery Hook from Apollo
+        QueryParams and consumption using useQuery hook
+]

@@ -2,7 +2,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import { useCharacters } from "../hooks/useCharacters";
 import { Link } from "react-router-dom";
 
-const CharacterList: React.FC = () => {
+const CharactersPage: React.FC = () => {
   const { error, data, loading } = useCharacters();
 
   if (loading) return <p>Loading...</p>;
@@ -31,4 +31,4 @@ const CharacterList: React.FC = () => {
   );
 };
 
-export default CharacterList;
+export default CharactersPage;

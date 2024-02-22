@@ -1,11 +1,11 @@
 import { Container } from "react-bootstrap";
-import CharacterList from "../Components/CharacterList";
+import CharactersPage from "./Characters-page";
 
 const HomePage: React.FC = () =>{
 
     return (
         <Container>
-            <CharacterList />
+            <CharactersPage />
         </Container>
     )
 

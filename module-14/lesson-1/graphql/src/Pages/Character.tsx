@@ -2,7 +2,7 @@ import { Button, Card, Container } from "react-bootstrap";
 import { useCharacter } from "../hooks/useCharacters";
 import { Link, useParams } from "react-router-dom";
 
-const Character: React.FC = () => {
+const CharacterPage: React.FC = () => {
   const { id } = useParams();
   const { data, loading, error } = useCharacter(id!);
   if (loading) return <p>Loading...</p>;
@@ -22,4 +22,4 @@ const Character: React.FC = () => {
   );
 };
 
-export default Character;
+export default CharacterPage;

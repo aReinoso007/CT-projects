@@ -6,11 +6,11 @@ import App from "./App";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { BrowserRouter } from "react-router-dom";
 
-const rickURL: string ='https://rickandmortyapi.com/graphql';
-const easyGRaphURL: string = 'https://graphqlzero.almansi.me/api';
+const rickAndMortyAPI: string ='https://rickandmortyapi.com/graphql';
+const mutationsAPI: string = 'https://graphqlzero.almansi.me/api';
 
 const client = new ApolloClient({
-  uri: rickURL,
+  uri: rickAndMortyAPI,
   cache: new InMemoryCache(),
 });
 

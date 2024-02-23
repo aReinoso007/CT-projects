@@ -6,19 +6,13 @@ Here are some learning objectives examples [
 - The students should be able to explain the role of an operating system and its importance in computer usage.
 - The students should be able to demonstrate proper digital etiquette and responsible online behavior.]
 based on these topics [
-    Authentication Fundamentals
-        What is it for?
-        JWT
-        Session Storage
-        Purpose of JWT, sessionStorage and Http headers
-    Auth0 for User Authentication
-        Setting up Auth0
-        Configuring Auth0
-        Auth0 provider
-        Adding navigation
-            Browser router
-            Auth0 guard for navigation
-            Route protection
+WebSockets Fundamentals
+    Introduction to Websockets with React and Typescript
+        undestanding what websockets are and how they work
+        Comparing web sockets with traditional HTPP requests
+        Benefits and use cases of websockets in real-time applications
+    Overview of WebSockets Libraries
+        Introduction to react-use-websocket, Socket.io, 
 ] all these applied to react with typescript
 
 
@@ -103,6 +97,8 @@ based on these topics [
    Defining queries using URQL
    useQuery Hook from apollo
    query params and consumption with apollo
+   Mutations with Apollo
+   useMutation hook
 ] 
 
 all these applied to react with typescript give me 2 coding exercises with the following structure:
@@ -148,4 +144,34 @@ based on these topics and subtopics [
         Defining GraphQL queries using URQL
         useQuery Hook from Apollo
         QueryParams and consumption using useQuery hook
+]
+
+
+
+give me an exercise for graphql mutations queries using this api: https://graphqlzero.almansi.me/api in a format like the following [
+    ## Exercise 1:  Consuming data from Rick and Morty API
+
+---
+
+**Objective:**
+
+- Understand the structure of GraphQL queries and write them to get data.
+
+---
+
+**Problem Statement:**
+
+You are tasked with consuming the Rick and Morty GraphQL API. Use the API documentation to elaborate different queries to get the data you need for your web application.
+
+**Instructions:**
+
+1. Read the Rick and Morty Documentation: https://rickandmortyapi.com/graphql
+2. Write 3 different queries to get information from the API.
+
+**Hints:**
+
+1. You can make use of `comand + bar-space` or `control-space` to autocomplete
+2. Remember to always include the keyword `query`
+3. The documentation is at the far left up corner
+Solution
 ]

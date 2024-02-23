@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import CharacterPage from "./Pages/Character";
+import CharacterPage from "./Pages/Character-page";
 import SearchComponent from "./Components/Search";
 import CharactersPage from "./Pages/Characters-page";
 

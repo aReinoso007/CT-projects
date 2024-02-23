@@ -32,3 +32,35 @@ const CharactersPage: React.FC = () => {
 };
 
 export default CharactersPage;
+
+/**
+ *  return (
+		data.characters.results.map(({ id, name, image }) => (
+    <div key={id}>
+      <p>{name}</p>
+      <img src={image} alt={name} />
+    </div>
+  ));	
+	)
+ */
+
+
+  /**
+   *  <h1>Character List</h1>
+      <Row>
+        {data.characters.results.map((character: any) => {
+          return (
+            <Col>
+              <Link to={`/${character.id}`}>
+                <Card id={character.id} style={{ width: "18rem" }}>
+                  <Card.Img variant="top" src={character.image} />
+                  <Card.Body>
+                    <Card.Title>{character.name}</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+          );
+        })}
+      </Row>
+   */

@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { io } from 'socket.io-client';
+import HomePage from './Pages/Home-page.';
+import ChatPage from './Pages/Chat-page';
+
+const socket = io('http://localhost:4000');
 
 function App() {
+  useEffect(() => {
+    // Your socket.io logic here
+    // For example, you can listen for events or emit data
+    socket.on('connect', () => {
+      console.log('Connected to socket server');
+    });
+
+    socket.on('message', (data) => {
+      console.log('Received message:', data);
+    });
+
+    // Clean up the socket connection when the component unmounts
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage socket={socket} />} />
+      <Route path="/chat" element={<ChatPage socket={socket} />}></Route>
+    </Routes>
   );
 }
 

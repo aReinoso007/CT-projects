@@ -12,11 +12,6 @@ def handle_message(message):
     send(message, broadcast=True)
     socketio.emit('message', message)
     
-@socketio.on('newUser')
-def handle_new_user(username):
-    print(f'New user: {username})')
-    socketio.emit('newUser', username)
-
 @socketio.on('disconnect')
 def handle_disconnect():
     print('Client disconnected')

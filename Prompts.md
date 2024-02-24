@@ -6,13 +6,12 @@ Here are some learning objectives examples [
 - The students should be able to explain the role of an operating system and its importance in computer usage.
 - The students should be able to demonstrate proper digital etiquette and responsible online behavior.]
 based on these topics [
-WebSockets Fundamentals
-    Introduction to Websockets with React and Typescript
-        undestanding what websockets are and how they work
-        Comparing web sockets with traditional HTPP requests
-        Benefits and use cases of websockets in real-time applications
-    Overview of WebSockets Libraries
-        Introduction to react-use-websocket, Socket.io, 
+    Creating Flask-socketIO server in Python
+        Handling WebSocket Connections
+        Sending and receiving data over websockets
+    Creating React Client with SocketIO
+        Connecting to a WebSocket server using SocketIO
+        Sending and receiving data with SocketIO in React
 ] all these applied to react with typescript
 
 
@@ -94,11 +93,12 @@ d) Testing the software system
     D - 4
     ]
 based on these topics [
-   Defining queries using URQL
-   useQuery Hook from apollo
-   query params and consumption with apollo
-   Mutations with Apollo
-   useMutation hook
+   Creating Flask-socketIO server in Python
+        Handling WebSocket Connections
+        Sending and receiving data over websockets
+    Creating React Client with SocketIO
+        Connecting to a WebSocket server using SocketIO
+        Sending and receiving data with SocketIO in React
 ] 
 
 all these applied to react with typescript give me 2 coding exercises with the following structure:

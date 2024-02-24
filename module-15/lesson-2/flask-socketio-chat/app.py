@@ -1,5 +1,3 @@
-## app.py
-from flask import render_template
 from web_socket_server import WebSocketServer, socketio, app
 
 app = WebSocketServer().create_app()
@@ -8,14 +6,14 @@ app = WebSocketServer().create_app()
 def handle_connect():
     print('Client connected')
 
-@socketio.on('disconnect')
-def handle_disconnect():
-    print('Client disconnected')
-
 @socketio.on('message')
 def handle_message(message):
     print(f'Received message: {message}')
     socketio.emit('message', message)
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
 
 
 if __name__ == '__main__':

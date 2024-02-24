@@ -9,3 +9,12 @@ npm install socket.io-client
 ```typescript
 import io from 'socket.io-client';
 ```
+
+
+run flask app
+```bash
+source venv/bin/activate  
+```
+```bash
+
+```

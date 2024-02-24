@@ -11,7 +11,9 @@ const HomePage: React.FC<HomePageProps> = ({socket}) =>{
   
     const handleSubmit = (e: any) => {
         e.preventDefault()
-        localStorage.setItem("userName", userName)
+        let userName = e.target.username.value
+        sessionStorage.setItem('userName', userName)
+        localStorage.setItem(userName, userName)
         socket.emit("newUser", {userName, socketID: socket.id})
         navigate("/chat")
       };

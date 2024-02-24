@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Container, Form } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 
 type MessageInputProps = {
   socket: any;
@@ -8,7 +8,8 @@ type MessageInputProps = {
 const MessageInput: React.FC<MessageInputProps> = ({ socket }) => {
   const [messageText, setMessageText] = useState("");
   const sendMessage = () => {
-    socket.emit("message", { text: messageText });
+    let userId = sessionStorage.getItem("userName");
+    socket.emit("message", {userId, text: messageText });
     setMessageText("");
   };
 

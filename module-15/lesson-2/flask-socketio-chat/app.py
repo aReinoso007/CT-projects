@@ -1,4 +1,4 @@
-from web_socket_server import WebSocketServer, socketio, app, send
+from web_socket_server import WebSocketServer, socketio, app
 
 app = WebSocketServer().create_app()
 
@@ -9,7 +9,6 @@ def handle_connect():
 @socketio.on('message')
 def handle_message(message):
     print(f'Received message: {message}')
-    send(message, broadcast=True)
     socketio.emit('message', message)
     
 @socketio.on('disconnect')

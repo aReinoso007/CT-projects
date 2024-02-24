@@ -16,5 +16,5 @@ run flask app
 source venv/bin/activate  
 ```
 ```bash
-
+flask --app app run
 ```

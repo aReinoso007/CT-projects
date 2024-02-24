@@ -14,7 +14,7 @@ const ChatPage: React.FC<ChatPageProps> = ({ socket }) => {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className="pt-3">
         <Signout socket={socket} />
         </Col>
       </Row>

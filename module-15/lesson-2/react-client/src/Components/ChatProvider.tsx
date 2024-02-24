@@ -39,7 +39,7 @@ const ChatProvider: React.FC<ChatProviderProps> = ({ socket }) => {
       {messages.map((message: Message, index: any) => (
         <Card key={index} className="mb-2">
           <Card.Body>
-            <Card.Text style={{color: message.userId === userID ? 'blue' : 'green'}}>{message.text}</Card.Text>
+            <Card.Text style={{color: message.userId === userID ? 'blue' : 'green', float: message.userId === userID ? 'right' : 'left'}}>{message.text}</Card.Text>
           </Card.Body>
         </Card>
       ))}

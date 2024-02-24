@@ -10,9 +10,7 @@ type SignoutProps = {
 const Signout: React.FC<SignoutProps> = ({socket, children}) => {
     const navigate = useNavigate();
     const handleSignout = () => {
-        let lSKey = sessionStorage.getItem('userName');
-        sessionStorage.removeItem('userName');
-        sessionStorage.removeItem(JSON.stringify(lSKey));
+        sessionStorage.removeItem('userName')
         socket.emit("signout")
         navigate("/")
     }

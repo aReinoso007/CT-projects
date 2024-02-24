@@ -1,17 +1,15 @@
 import { useState } from "react";
 import { Container, Form } from "react-bootstrap";
 
-type MessageInputProps = {
-  socket: any;
-};
+type SimpleMessageInputProps = {
+    socket: any;
+}
 
-const MessageInput: React.FC<MessageInputProps> = ({ socket }) => {
-    
-  const [messageText, setMessageText] = useState("");
+const SimpleMessaeInput: React.FC<SimpleMessageInputProps> = ({socket}) => {
+    const [messageText, setMessageText] = useState("");
 
   const sendMessage = () => {
-    let userId = sessionStorage.getItem("userName");
-    socket.emit("message", {userId, text: messageText });
+    socket.emit("message", { text: messageText });
     setMessageText("");
   };
 
@@ -40,5 +38,6 @@ const MessageInput: React.FC<MessageInputProps> = ({ socket }) => {
       </Form>
     </Container>
   );
-};
-export default MessageInput;
+}
+
+export default SimpleMessaeInput;

@@ -1,25 +1,18 @@
 import { useEffect, useState } from "react";
 import { Card, Container } from "react-bootstrap";
 
-type ChatProviderProps = {
+type SimpleChatBodyProps = {
   socket: any;
 };
 
-type Message = {
-  text: string;
-  userId: string;
-};
-
-
-const ChatProvider: React.FC<ChatProviderProps> = ({ socket }) => {
+const SimpleChatBody: React.FC<SimpleChatBodyProps> = ({ socket }) => {
   const [messages, setMessages] = useState([] as any);
-  const userID = sessionStorage.getItem("userName");
 
   useEffect(() => {
-    socket.on("message", (message: Message) => {
+    socket.on("message", (message: any) => {
       setMessages([...messages, message]);
     });
-  }, [socket, messages, userID]);
+  }, [socket, messages]);
 
   return (
     <Container
@@ -30,14 +23,18 @@ const ChatProvider: React.FC<ChatProviderProps> = ({ socket }) => {
         borderRadius: "10px",
       }}
     >
-      {messages.map((message: Message, index: any) => (
+      {messages.map((message: any, index: any) => (
         <Card key={index} className="mb-2">
           <Card.Body>
-            <Card.Text style={{color: message.userId === userID ? 'blue' : 'green', float: message.userId === userID ? 'right' : 'left'}}>{message.text}</Card.Text>
+            <Card.Text
+            >
+              {message.text}
+            </Card.Text>
           </Card.Body>
         </Card>
       ))}
     </Container>
   );
 };
-export default ChatProvider;
+
+export default SimpleChatBody;

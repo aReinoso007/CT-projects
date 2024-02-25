@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 import { io } from "socket.io-client";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./Pages/Home-page.";
+import HomePage from "./Pages/Home-page";
 import ChatPage from "./Pages/Chat-page";
 
 const socket = io("http://127.0.0.1:5000");

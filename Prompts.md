@@ -101,7 +101,7 @@ based on these topics [
         Sending and receiving data with SocketIO in React
 ] 
 
-all these applied to react with typescript give me 2 coding exercises with the following structure:
+all these applied to react with typescript give me 1 coding exercises with the following structure:
 [
     Objective
     Problem statement
@@ -175,3 +175,8 @@ You are tasked with consuming the Rick and Morty GraphQL API. Use the API docume
 3. The documentation is at the far left up corner
 Solution
 ]
+
+
+create a function that stores all the messages sent by each user, in localstorage, then display a list of all the messages grouped by usernames
+
+Create a new page for showing the history of messages sent by each user, add filtering
